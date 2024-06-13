@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="left">
+                <li><a href="index.html"><img src="./img/home.png" alt="홈" class="home-icon"></a></li>
+            </ul>
+            <ul class="center">
+                <li><a href="sub1.html">유래</a></li>
+                <li><a href="sub2.html">상징</a></li>
+                <li><a href="sub3.html">문화</a></li>
+                <li><a href="sub4.html">트리 꾸미기</a></li>
+                <li><a href="sub5.html">소원 빌기</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <main>
+        <section id="main-countdown">
+            <div class="countdown">
+                <h2>HAPPY HOLIDAY! <br> 기다리는 크리스마스까지,</h2>
+                <div id="timer"></div>
+            </div>
+        </section>
+
+        <section id="banner_1">
+            <div id="banner_1_inner">
+                <p>근데, 크리스마스는 왜 크리스마스일까?</p>
+            </div>
+        </section>
+
+        <section id="content_1">
+            <div class="card">
+                <div class="card_img" style="background-image: url('./img/카드_산타.png');"></div>
+                <div class="card_text">
+                    <div class="card_inner_text">
+                        <p>산타는 왜 선물을 줄까?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img" style="background-image: url('./img/카드_트리.png');"></div>
+                <div class="card_text">
+                    <div class="card_inner_text">
+                        <p>트리는 왜 꾸미는 걸까?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img" style="background-image: url('./img/카드_선물.png');"></div>
+                <div class="card_text">
+                    <div class="card_inner_text">
+                        <p>선물 교환은 왜 하는 걸까?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="banner_2">
+            <div id="banner_2_inner">
+                <p>함께 궁금증을 해결하고, <br> 트리꾸미기와 소원 작성하기 이벤트에 참여하자! </p>
+            </div>
+        </section>
+
+        <section id="content_2">
+            <ul id="content_2_ul">
+                <li class="content_2_li">
+                    <div class="content_2_summary">
+                        <a href="sub1.html"><p>크리스마스의 유래 알기</p></a>
+                    </div>
+                    <div class="content_2_content">
+                        <p class="content_2_text">크리스마스의 유래와 역사를 알아보자!</p>
+                    </div>
+                </li>
+
+                <li class="content_2_li">
+                    <div class="content_2_summary">
+                        <a href="sub2.html"><p>크리스마스의 상징들 살펴보기</p></a>
+                    </div>
+                    <div class="content_2_content">
+                        <p class="content_2_text">크리스마스의 상징들을 알아보자!</p>
+                    </div>
+                </li>
+
+                <li class="content_2_li">
+                    <div class="content_2_summary">
+                        <a href="sub3.html"><p>크리스마스를 맞이하는 다양한 문화들</p></a>
+                    </div>
+                    <div class="content_2_content">
+                        <p class="content_2_text">크리스마스를 맞이하는 국내, 해외의 문화들을 알아보자!</p>
+                    </div>
+                </li>
+
+                <li class="content_2_li">
+                    <div class="content_2_summary">
+                        <a href="sub4.html"><p>나만의 트리 꾸미기</p></a>
+                    </div>
+                    <div class="content_2_content">
+                        <p class="content_2_text">나만의 트리를 꾸며 저장하자!</p>
+                    </div>
+                </li>
+
+                <li class="content_2_li">
+                    <div class="content_2_summary">
+                        <a href="sub5.html"><p>신년 소원빌기</p></a>
+                    </div>
+                    <div class="content_2_content">
+                        <p class="content_2_text">미리 새해 소원을 빌어보자!</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <ul>
+                <li>로그인</li>
+                <li>마이페이지</li>
+                <li>참고 문헌</li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><img class="sns_icon" src="./img/아이콘-네이버블로그.svg" alt="Navervlog"></a>
+                <a href="#"><img class="sns_icon" src="./img/아이콘-인스타그램.svg" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright (c) All Rights Reserved</p>
+        </div>
+    </footer>
+    <div class="music-btn">
+        <img src="./img/music_btn.png" alt="Music Button">
+    </div>
+    <audio id="music" src="./mp3/We Wish You A Merry Christmas - DJ Williams.mp3"></audio>
+    <script src="index.js"></script>
+</body>
+</html>

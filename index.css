@@ -1,0 +1,341 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.left {
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul.center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.home-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+main {
+    padding: 80px 20px 20px;
+    text-align: center;
+    margin: 0 200px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-top ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-top ul li {
+    margin-right: 15px;
+}
+
+.footer-top .social-media a {
+    margin-left: 10px;
+}
+
+.sns_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    padding: 10px 200px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    .footer-top ul {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        padding: 10px 20px;
+    }
+
+    main {
+        margin: 0 20px;
+    }
+}
+
+main {
+    background-color: #ececec; /* 배경색 변경 */
+}
+
+#main-countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.countdown {
+    text-align: center;
+    vertical-align: middle; /* 세로 중앙 정렬 */
+    font-size: 3rem;
+}
+
+#banner_1, #banner_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-image: url('./img/banner_red.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#banner_1_inner, #banner_2_inner {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 30px;
+    background-color: #0000002b;
+}
+#banner_1_inner, #banner_2_inner p {
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#content_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    /* background-color: rgb(208, 255, 0); */
+}
+
+.card {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000002a;
+    /* background-color: rgb(198, 172, 255); */
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+.card_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+
+    /* background-color: rgb(255, 229, 172); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card_inner_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#banner_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+}
+
+#content_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: rgb(208, 255, 0); */
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+#content_2_ul {
+    width: 90%;
+    /* background-color: rgb(203, 203, 203); */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content_2_li {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 30px; /* 상단 모서리 둥글게 */
+}
+
+.content_2_summary {
+    padding: 10px;
+    background-color: #ff5d5d;
+    transition: background-color 0.3s;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 0 10px #0000002d;
+
+    color: #fff;
+}
+
+.content_2_summary:hover {
+    background-color: #43c36b;
+}
+
+.content_2_content {
+    padding: 20px;
+    display: none; /* 기본적으로 숨김 */
+    background-color: white; /* 하얀 박스 안에 있는 형태로 설정 */
+    transition: display 0.3s ease-in-out;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 10px #0000002d;
+    font-weight: 500;
+
+}
+
+.content_2_li:hover .content_2_content {
+    display: block; /* 호버 시 표시 */
+}
+
+.content_2_text {
+    /* background-color: #ffd1d1; */
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.music-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.music-btn img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: transparent;
+}

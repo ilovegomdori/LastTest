@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트리 꾸미기</title>
+    <link rel="stylesheet" href="sub4.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="left">
+                <li><a href="index.html"><img src="./img/home.png" alt="홈" class="home-icon"></a></li>
+            </ul>
+            <ul class="center">
+                <li><a href="sub1.html">유래</a></li>
+                <li><a href="sub2.html">상징</a></li>
+                <li><a href="sub3.html">문화</a></li>
+                <li><a href="sub4.html">트리 꾸미기</a></li>
+                <li><a href="sub5.html">소원 빌기</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <main>
+        <section id="#sub4_intro">
+            <div class="intro">
+                <div id="snowglobe-box">
+                    <div class="snowglobe-container">
+                        <div class="snowglobe">
+                            <img src="./img/snowman.png" alt="눈사람">
+                            <div class="snowflakes">
+                                <img src="./img/snowflake.png" class="snowflake" alt="눈송이">
+                                <img src="./img/snowflake.png" class="snowflake" alt="눈송이">
+                                <img src="./img/snowflake.png" class="snowflake" alt="눈송이">
+                                <img src="./img/snowflake.png" class="snowflake" alt="눈송이">
+                                <img src="./img/snowflake.png" class="snowflake" alt="눈송이">
+                            </div>
+                        </div>
+                        <img src="./img/스노우볼밑판.png" alt="받침" class="base">
+                    </div>
+                </div>
+
+                <div class="intro-text-container">
+                    <div class="intro-text">
+                        <h2>트리 꾸미기</h2>
+                        <p>장식물을 드래그하여 나만의 트리를 꾸며보세요!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="sub4_main">
+            <div class="tree-container">
+                <div class="tree" id="tree">
+                    <img src="./img/트꾸_트리.png" alt="크리스마스 트리">
+                </div>
+            </div>
+            <div class="decorations">
+                <img src="./img/트꾸_리본.png" alt="리본" class="decoration" draggable="true">
+                <img src="./img/트꾸_별.png" alt="별" class="decoration" draggable="true">
+                <img src="./img/트꾸_사탕.png" alt="사탕" class="decoration" draggable="true">
+                <img src="./img/트꾸_오너먼트빨강.png" alt="오너먼트 빨강" class="decoration" draggable="true">
+                <img src="./img/트꾸_오너먼트파랑.png" alt="오너먼트 파랑" class="decoration" draggable="true">
+                <img src="./img/트꾸_종.png" alt="종" class="decoration" draggable="true">
+                <img src="./img/트꾸_줄_레이스.png" alt="줄 레이스" class="decoration" class="decoration_line" draggable="true">
+                <img src="./img/트꾸_줄_민자.png" alt="줄 민자" class="decoration" class="decoration_line" draggable="true">
+                <img src="./img/트꾸_줄_전구.png" alt="줄 전구" class="decoration" class="decoration_line" draggable="true">
+                <img src="./img/트꾸_줄_점선.png" alt="줄 점선" class="decoration" class="decoration_line" draggable="true">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <ul>
+                <li>로그인</li>
+                <li>마이페이지</li>
+                <li>참고 문헌</li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><img class="sns_icon" src="./img/아이콘-네이버블로그.svg" alt="Navervlog"></a>
+                <a href="#"><img class="sns_icon" src="./img/아이콘-인스타그램.svg" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright (c) All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const decorations = document.querySelectorAll(".decoration");
+
+            decorations.forEach(decoration => {
+                decoration.addEventListener("dragstart", dragStart);
+                decoration.addEventListener("dragend", dragEnd);
+            });
+
+            function dragStart(e) {
+                e.dataTransfer.setData("text/plain", e.target.id);
+                setTimeout(() => {
+                    e.target.style.visibility = "hidden";
+                }, 50);
+            }
+
+            function dragEnd(e) {
+                e.target.style.visibility = "visible";
+                e.target.style.position = "absolute";
+                e.target.style.left = `${e.pageX - e.target.width / 2}px`;
+                e.target.style.top = `${e.pageY - e.target.height / 2}px`;
+                document.body.appendChild(e.target);
+            }
+        });
+
+    </script>
+</body>
+</html>
