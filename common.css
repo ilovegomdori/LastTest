@@ -1,0 +1,23 @@
+/* 기존 스타일 유지 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 12px;
+    color: #000000;
+    background-color: #f2f0f0;
+}
+
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 요소의 색상 상속 */
+}
+
+/* a 태그의 상태에 따른 스타일링 제거 */
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none; /* 모든 상태에서 밑줄 제거 */
+    color: inherit; /* 모든 상태에서 색상 변경 방지 */
+}
