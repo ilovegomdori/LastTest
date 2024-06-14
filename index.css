@@ -145,7 +145,38 @@ main {
     align-items: center;
     height: 900px;
     /* background-color: rgb(255, 255, 255); */
+    background-image: url("./img/light_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 배경 이미지 출처: https://kr.freepik.com/free-vector/jeonguleul-gajin-salangseuleoun-keuliseumaseu-kadeu_757605.htm#fromView=search&page=1&position=2&uuid=daa806e2-0306-4184-ba39-48d26cf4fe57 */
+    /* animation: blink-effect 4s ease-in-out infinite; */
 }
+
+
+/* @keyframes blink-effect {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  } */
+  
+
+/* #light {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 650px;
+    max-height: 650px;
+    aspect-ratio: 1 / 1;
+    background-image: url("img/bg_black_light.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid black;
+    animation: blink-effect 4s ease-in-out infinite;
+} */
+
 
 .countdown {
     text-align: center;
