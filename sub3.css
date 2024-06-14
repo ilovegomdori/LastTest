@@ -201,10 +201,10 @@ footer {
 }
 
 .snowglobe img {
-    width: 50%;
+    width: 60%;
     height: auto;
     position: absolute;
-    bottom: 10px;
+    bottom: 39px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -296,6 +296,9 @@ img.snowflake {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#content_2{
+    height: 800px; /* 고정된 높이 */
 }
 
 #content_2 article, #content_1 article {

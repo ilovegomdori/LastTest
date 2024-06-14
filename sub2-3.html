@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>트리 꾸미기</title>
-    <link rel="stylesheet" href="sub4.css">
+    <title>크리스마스의 상징</title>
+    <link rel="stylesheet" href="sub2.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 </head>
@@ -25,12 +25,12 @@
         </nav>
     </header>
     <main>
-        <section id="sub5_main">
+        <section id="sub2_main">
             <div class="intro">
                 <div id="snowglobe-box">
                     <div class="snowglobe-container">
                         <div class="snowglobe">
-                            <img src="./img/snowman.png" alt="눈사람">
+                            <img src="./img/tree.png" alt="눈사람">
                             <div class="snowflakes">
                                 <img src="./img/snowflake.png" class="snowflake" alt="눈송이">
                                 <img src="./img/snowflake.png" class="snowflake" alt="눈송이">
@@ -45,26 +45,31 @@
 
                 <div class="intro-text-container">
                     <div class="intro-text">
-                        <h2>트리 꾸미기</h2>
-                        <p>장식물을 드래그하여 나만의 트리를 꾸며보세요!</p>
+                        <h2>크리스마스의 상징</h2>
+                        <p>크리스마스 트리, 산타, 케이크,<br>캐롤에 대해 소개합니다!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="sub4_main">
-            <div class="tree-container">
-                <div class="tree" id="tree">
-                    <img src="./img/트꾸_트리.png" alt="크리스마스 트리">
-                </div>
+        <section id="content_1">
+            <div class="gallery-nav">
+                <button id="move-left" class="nav-button"><img src="./img/bt_move_left.png" alt="Left"></button>
+                <ul class="gallery-thumbnails">
+                    <li><a href="sub2.html">1</a></li>
+                    <li><a href="sub2-2.html">2</a></li>
+                    <li><a href="sub2-3.html">3</a></li>
+                    <li><a href="sub2-4.html">4</a></li>
+                    <li><a href="sub2-5.html">5</a></li>
+                </ul>
+                <button id="move-right" class="nav-button"><img src="./img/bt_move_right.png" alt="Right"></button>
             </div>
-            <div class="decorations">
-                <img src="./img/트꾸_리본.png" alt="리본" class="decoration" draggable="true">
-                <img src="./img/트꾸_별.png" alt="별" class="decoration" draggable="true">
-                <img src="./img/트꾸_사탕.png" alt="사탕" class="decoration" draggable="true">
-                <img src="./img/트꾸_오너먼트빨강.png" alt="오너먼트 빨강" class="decoration" draggable="true">
-                <img src="./img/트꾸_오너먼트파랑.png" alt="오너먼트 파랑" class="decoration" draggable="true">
-                <img src="./img/트꾸_종.png" alt="종" class="decoration" draggable="true">
+            <div class="gallery-content">
+                <h3>크리스마스 트리</h3>
+                <div class="content-box">
+                    <p>크리스마스 트리는 크리스마스의 대표적인 상징 중 하나로, 집 안이나 공공장소에 설치되어 장식됩니다. 트리에는 조명, 장식품, 별 등이 걸리며, 이 장식품들은 크리스마스의 분위기를 한껏 살려줍니다. 크리스마스 트리는 가족들이 함께 꾸미는 활동으로, 가족 간의 유대감을 높이는 데 큰 역할을 합니다.</p>
+                </div>
+                <img src="./img/카드_트리.png" alt="크리스마스 트리" class="content-image">
             </div>
         </section>
     </main>
@@ -84,32 +89,5 @@
             <p>Copyright (c) All Rights Reserved</p>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const decorations = document.querySelectorAll(".decoration");
-
-            decorations.forEach(decoration => {
-                decoration.addEventListener("dragstart", dragStart);
-                decoration.addEventListener("dragend", dragEnd);
-            });
-
-            function dragStart(e) {
-                e.dataTransfer.setData("text/plain", e.target.id);
-                setTimeout(() => {
-                    e.target.style.visibility = "hidden";
-                }, 50);
-            }
-
-            function dragEnd(e) {
-                e.target.style.visibility = "visible";
-                e.target.style.position = "absolute";
-                e.target.style.left = `${e.pageX - e.target.width / 2}px`;
-                e.target.style.top = `${e.pageY - e.target.height / 2}px`;
-                document.body.appendChild(e.target);
-            }
-        });
-
-    </script>
 </body>
 </html>
